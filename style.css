@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Silka', Arial, Helvetica, sans-serif;
+}
+
+.titleBar {
+    display: flex;
+    padding: 20px 0 0 60px;
+}
+
+.logo {
+    height: 50%;
+    width: 350px;
+}
+
+.content {
+    padding: 70px 90px 20px 90px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+
+}
+
+.welcomeIcon {
+    animation: bounce 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+
+}
+
+.welcomeText {
+    font-size: 7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.06em;
+    color: #254A9C;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.demoInput {
+    background: #E3EDF7;
+    box-shadow: inset 0px 2px 4px #C8D4E2, inset 4px 2px 6px #B1C5D5, inset 3px 6px 6px #C3D7E7, inset -6px -3px 5px rgba(255, 255, 255, 0.750601);
+    border-radius: 30px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 80px;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+
+
+
+}
+
+.morphInput {
+    padding: 15px 30px 15px 20px;
+    margin: 0 0 0 2px;
+    font-family: 'Silka', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    color: #31539E;
+    background: transparent;
+    border: 0px solid;
+    outline: 0px;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+
+}
+
+.morphInput:focus {
+    outline: none;
+}
+
+.morphInput::placeholder {
+
+    color: rgba(49, 84, 158, 0.749);
+}
+
+
+.requestButton {
+    cursor: pointer;
+    color: #E3EDF7;
+    border: 0px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(180deg, #31539E 0%, #082D67 100%);
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    flex-grow: 2;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 10s;
+
+}
+
+.requestButton:hover {
+    background-color: rgb(61, 119, 242);
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, 0%);
+        opacity: 0;
+
+
+    }
+
+    /* 50% {
+        transform: translate(0, 50%);
+        opacity: 1;
+    } */
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        transform: translate(60%, 0%);
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+
+/* Media Queries */
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Thin.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Light.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-RegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/Silka-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
