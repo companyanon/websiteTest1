@@ -97,7 +97,7 @@ body {
     line-height: 60px;
     height: 60px;
     flex-grow: 2;
-    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 10s;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s;
 
 }
 
