@@ -17,7 +17,7 @@ function animatePages() {
         const Reveal = section.querySelector('.anima');
         const RevealImg = section.querySelector('.welcomeIcon');
         const RevealCard = section.querySelector('.featureCard')
-
+        const RevealMessage = section.querySelector('.message1')
         const slide = gsap.timeline({
             defaults: {
                 duration: 1,
@@ -46,8 +46,15 @@ function animatePages() {
             y: "0%",
             opacity: 1
         }, "-=2");
-        slide.fromTo(RevealCard, {
+        slide.fromTo(RevealMessage, {
             y: "100%",
+            opacity: 0
+        }, {
+            y: "0%",
+            opacity: 1
+        }, "-=2");
+        slide.fromTo(Reveal, {
+            y: "60%",
             opacity: 0
         }, {
             y: "0%",

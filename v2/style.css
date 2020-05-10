@@ -33,7 +33,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .section3 {
@@ -41,6 +40,36 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.section4 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.messages {
+    width: 60vw;
+    background-color: #FFF;
+    box-shadow: 0px 4px 50px rgba(52, 78, 75, 0.25);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.top {
+    background: linear-gradient(180deg, rgba(54, 100, 204, 0.89) 0%, rgba(12, 50, 135, 0.89) 100%);
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    display: flex;
+    padding: 10px 0px 0px 10px;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+.message1 {
+    margin: 40px;
 }
 
 .content {
