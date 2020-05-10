@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NeutrifPro', 'Silka', Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #ECF5FE 0%, #E8F2FC 100%);
+}
+
+
+.nav {
+    display: flex;
+    padding: 20px 0 0 60px;
+    z-index: 3;
+}
+
+.logo {
+    height: 50%;
+    width: 350px;
+
+}
+
+.section1 {
+    height: 100vh;
+    z-index: 1;
+}
+
+.section2 {
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.section3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    padding: 70px 90px 0px 90px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+}
+
+.companies>img {
+    padding: 20px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.5s linear;
+
+}
+
+.companies>img:hover {
+    transition: all 0.5s linear;
+    cursor: pointer;
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.welcomeIcon {
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+}
+
+.welcomeText1 {
+    font-size: 7rem;
+    font-weight: 900;
+    /* font-family: 'Eina'; */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.06em;
+    color: #254A9C;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.welcomeText2 {
+    flex-grow: 0;
+    text-align: center;
+    margin: 60px 90px 90px 20px;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #254A9C;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.welcomeText3 {
+    flex-grow: 0;
+    text-align: center;
+    margin: 0px 0px 90px 0px;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #254A9C;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+
+.demoInput {
+    background: #E3EDF7;
+    box-shadow: inset 0px 2px 4px #C8D4E2, inset 4px 2px 6px #B1C5D5, inset 3px 6px 6px #C3D7E7, inset -6px -3px 5px rgba(255, 255, 255, 0.750601);
+    border-radius: 30px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0px 0px 0px 30px;
+    margin: 40px 0px 0px 80px;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.morphInput {
+    padding: 15px 30px 15px 20px;
+    margin: 0 0 0 2px;
+    font-family: 'NeutrifPro', Arial, Helvetica, sans-serif;
+    font-weight: semi-bold;
+    font-size: 20px;
+    width: 350px;
+    color: #31539E;
+    background: transparent;
+    border: 0px solid;
+    outline: 0px;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+}
+
+.morphInput:focus {
+    outline: none;
+}
+
+.morphInput::placeholder {
+
+    color: rgba(49, 84, 158, 0.749);
+}
+
+
+.requestButton {
+    cursor: pointer;
+    color: #E3EDF7;
+    border: 0px;
+    font-family: 'NeutrifPro', sans-serif;
+    font-style: normal;
+    font-weight: semi-bold;
+    font-size: 20px;
+    background: linear-gradient(180deg, #31539E 0%, #082D67 100%);
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    flex-grow: 2;
+    animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+}
+
+.smallRequestButton,
+.requestButtonforMobile {
+    visibility: hidden;
+}
+
+.requestButton:hover {
+    background-color: rgb(61, 119, 242);
+}
+
+.section3 .cards {
+    display: flex;
+    justify-content: center;
+}
+
+.featureCard {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(25, 28, 31, 0.0784314) 0px 14px 32px, rgba(25, 28, 31, 0.0392157) 0px 8px 16px, rgba(25, 28, 31, 0.0392157) 0px -1px 0px;
+    border-radius: 16px 16px 16px 16px;
+    padding: 24px 0 24px 0;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /* margin-left: 40px; */
+}
+
+.featureCard>img {
+    height: 200px;
+
+}
+
+
+/* Animations */
+/* 
+@keyframes bounce {
+    0% {
+        transform: translate(-80%, 0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+} */
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .nav {
+        display: flex;
+        padding: 20px 0 0 60px;
+        z-index: 3;
+        overflow-y: hidden;
+    }
+
+
+    .content {
+        padding: 40px 10px 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow-y: hidden;
+
+    }
+
+    .messageIcon {
+        height: 100px;
+    }
+
+    .welcomeText1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .welcomeText2 {
+        margin: 20px 10px 10px 0px;
+        font-size: 3rem;
+        padding: 0;
+
+    }
+
+    .welcomeText3 {
+        /* margin: 20px 10px 10px 0px; */
+        font-size: 3rem;
+        padding: 0;
+
+    }
+
+    .demoInput {
+        visibility: hidden;
+
+    }
+
+    .smallRequestButton {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .requestButtonforMobile {
+
+        visibility: visible;
+        cursor: pointer;
+        color: #E3EDF7;
+        text-align: center;
+        border: 0px;
+        font-family: NeutrifPro, sans-serif;
+        font-size: 20px;
+        background: linear-gradient(180deg, #31539E 0%, #082D67 100%);
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+        animation: revealBottom 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+    }
+}
+
+/* Fonts */
+/* @font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Thin.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Light.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka';
+    src: url('./assets/fonts/Silka-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Silka-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProMedium.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProRegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProThin.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProLight.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProBold.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProMedium.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrifPro';
+    src: url('./assets/fonts/NeutrifProRegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/NeutrifProRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
